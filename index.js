@@ -21,7 +21,7 @@ var logPrefix = '[nodebb-plugin-import-xenforo]';
 			password: config.dbpass || config.pass || config.password || undefined,
 			port: config.dbport || config.port || 3306,
 			database: config.dbname || config.name || config.database || 'xf',
-			socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
+			socketPath: '/tmp/mysql.sock'
 		};
 
 		Exporter.config(_config);
